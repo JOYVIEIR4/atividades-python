@@ -107,3 +107,33 @@ elif idade <= 20:
 
 else:
   print(f"Você tem {idade} anos e sua categoria é MASTER")
+
+#Desafio 6 -Elabore um programa que calcule o valor a ser pago por um produto,
+#considerando o seu preço normal e condição de pagamento - à vista: 10% / Debito:
+#5% / em ate 2x no cartão: preço formal / 3x ou mais no cartão 20% de juros.
+
+produto = float(input("Informe o valor do produto "))
+print("Escolha a forma de pagamento: ")
+print("1 - à vista")
+print("2 - Debito")
+print("3 - em ate 2x no cartão")
+print("4 - 3x ou mais no cartão")
+opção = int(input("Digite a opção desejada: "))
+
+if opção == 1:
+    produto = produto - (produto * 0.1)
+    print(f"O valor do produto com 10% de desconto é R${produto}")
+
+elif opção == 2:
+    produto = produto - (produto * 0.05)
+    print(f"O valor do produto com 5% de desconto é R${produto}")
+
+elif opção == 3:
+    print(f"O valor do produto parcelado em 2x no cartão é R${produto}")
+
+elif opção == 4:
+    produto = produto + (produto * 0.2)
+    print(f"O valor do produto parcelado em 3x ou mais, contém o acréscimo de 20% de juros e fica no total de R${produto}")
+
+else:
+    print("Opção inválida!")
