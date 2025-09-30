@@ -27,36 +27,24 @@ else:
 #Desafio 2-Escreva um programa que leia um número inteiro qualquer e peça para o
 #usuário escolher qual será a base de conversão 1Binario 2 octal 3hexadecimal
 
-numero = int(input("Escolha seu número: "))
+numero = int(input("Escolha um número inteiro: "))
+print("Escolha a base de conversão: ")
+print("1 - Binário")
+print("2 - Octal")
+print("3 - Hexadecimal")
+opção = int(input("Digite a opção desejada: "))
 
-if numero == 1:
+if opção == 1:
     print(bin(numero))
 
-elif numero == 2:
+elif opção == 2:
     print(oct(numero))
 
-elif numero == 3:
+elif opção == 3:
     print(hex(numero))
 
 else:
     print("Número inválido!")
-
-#Desafio 3-Escreva um programa que leia dois números inteiros e compare-os,
-#mostrando na tela uma mensagem:
-#O primeiro valor é maior / O segundo valor é menor / não existe valor maior os
-#dois são iguais
-
-numero1 = int(input("Digite o primeiro número: "))
-numero2 = int(input("Digite o segundo número: "))
-
-if numero1 > numero2:
-    print("O primeiro valor é maior")
-
-elif numero2 > numero1:
-    print("O segundo valor é maior")
-
-else:
-    print("Não existe valor maior, os dois são iguais.")
 
 #Desafio 4-Faça um programa que leia o ano de nascimento de um jovem e informe,
 #de acordo com sua idade: Se ele vai se alistar ao serviço militar. / Se é a hora
